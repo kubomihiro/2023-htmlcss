@@ -18,3 +18,24 @@ background-color: #333;
     background-color: #fff;
     border: 1px solid #ccc;
 }
+
+.contents-item-tittle{
+ padding: 8px 16px;
+ margin:0;
+ background-color: #333;
+ color:#fff;
+}
+
+.contents-item-text{
+    margin: 16px;
+}
+.main-title,.description{
+    margin: 16px;
+}
+.copyright{
+padding: 16px;
+margin: 0;
+background-color: #333;
+color: #fff;
+text-align: center;
+}
