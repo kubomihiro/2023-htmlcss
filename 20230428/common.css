@@ -39,3 +39,30 @@ background-color: #333;
 color: #fff;
 text-align: center;
 }
+
+.menu{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu-item a {
+    display: black;
+padding: 16px;
+background-color: #333;
+color: #fff;
+border:3px solid#ccc;
+text-decoration: none;
+}
+
+.menu-item a:hover{
+    background-color: #666;
+}
