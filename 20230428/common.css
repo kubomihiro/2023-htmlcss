@@ -66,3 +66,35 @@ text-decoration: none;
 .menu-item a:hover{
     background-color: #666;
 }
+.box{
+    padding:20px;
+    border: 50px solid red;
+    width:200px;
+    height: 200px;
+}
+
+.border-box{
+    box-sizing: flex;
+}
+
+
+.entries{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.entry{
+    margin: 8px;
+    width:calc(25% - 16px);
+    border: 2px solid#ccc;
+    box-sizing:border-box;
+}
+
+.entry-img{
+    margin: 0;
+}
+
+.entry-img img{
+    width:100%;
+    display: block;
+}
