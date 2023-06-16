@@ -98,3 +98,42 @@ text-decoration: none;
     width:100%;
     display: block;
 }
+
+.fixed-button{
+    background-color: #333;
+    color: #fff;
+    padding: 16px;
+    margin: 0;
+    position: fixed;/*fixedはボタン出てくる*/
+    left: 0;
+    bottom: 0;/*topだと上bottomだと下*/
+}
+
+.relative-button{
+    background-color: pink;
+    color: #fff;
+    padding: 16px;
+    margin: 0;
+    position: relative;
+    left: 10px;
+    bottom: -10px;
+}
+   
+.absolute-button{
+    background-color: red;
+    color: #fff;
+    padding: 16px;
+    margin: 0;
+    position: absolute;
+    right: 0;
+     top: 0;
+ }
+
+  
+ .absolute-container{
+    border: 3px solid red;
+    padding: 3px;
+    height: 200px;
+    position: relative;
+   
+ }
