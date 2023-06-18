@@ -10,15 +10,15 @@
 </head>
 
 <body>
-    <header class="header_site">
+    <header class="header-title">
         <h1> Xeory Extention</h1>
-        <h2>ブログコンテンツ</h2>
+        <h2 class="header-lead">ブログコンテンツ</h2><!--リード文-->
         <ul>
             <li>記事ページサンプル</li>
             <li>Extensionをダウンロード</li>
         </ul>
-        <section>
-            <h2> Xeory Extention</h2>
+        <section class="header-heading"><!--見出し-->
+            <h2> Xeory Extention </h2>
             <p> Xeory Extensionはワンコラムのサイト型テーマです。ユーザーに対して重要なコンテンツを効率的に届けられるようにデザインされています。５種類のカラーバリエーションを用意しています。</p>
         </section>
     </header>
@@ -26,31 +26,41 @@
     <main>
         <section>
             <h2>人気のある記事</h2>
-            <!--カテゴリー投稿はpでテスト投稿はhで囲う直し!!!!!-->
-            <!--imgはfigureで囲う-->
-            <!--順番h→カテゴリ→画像読み上げる時に逆なのでは？-->
+            <!--カテゴリー投稿はpでテスト投稿はhで囲う直し!!!!!ok-->
+            <!--imgはfigureで囲うok-->
+            <!--順番h→カテゴリ→画像読み上げる時に逆なのでは？ok-->
             <article>
-                <h3 class>カテゴリー#1 </h3>
-                <p>テスト投稿</p>
+                <h3 class="article-category">テスト投稿</h3>
+                <p class="article-category">カテゴリー#1 </p>
                 <a href="https://xeory.jp/extension/demo-top">
-                    <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
-                        alt="パソコン画像">
+                    <figure class="article-img">
+                        <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
+                            alt="パソコン画像">
+                        <figcaption class="figcaption-1">No.1</figcaption><!--画像に付随するキャプション-->
+                    </figure>
                 </a>
             </article>
             <article>
-                    <h3>テスト投稿</h3>
-                    <p>カテゴリー#1</p>
-                    <a href="https://xeory.jp/extension/demo-top">
+                <h3>テスト投稿</h3>
+                <p class="article-category">カテゴリー#1</p>
+                <a href="https://xeory.jp/extension/demo-top">
+                    <figure class="article-img">
                         <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/rest-time-in-front-of-macbook.png"
                             alt="カフェ画像">
+                        <figcaption class=figcaption-2>No.2</figcaption>
+                    </figure>
                 </a>
             </article>
             <article>
-                <h3>カテゴリー#4</h3>
-                <p>テスト投稿</p>
+                <h3>テスト投稿</h3>
+                <p class="article-category">カテゴリー#1</p>
                 <a href="https://xeory.jp/extension/demo-top">
-                    <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
-                        alt="パソコン画像"></a>
+                    <figure class="article-img">
+                        <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
+                            alt="パソコン画像">
+                        <figcaption class="figcaption-3">No.3</figcaption>
+                    </figure>
+                </a>
             </article>
         </section>
 
@@ -58,73 +68,83 @@
             <!--liの中にhいれちゃダメ！！！！！！-->
             <h2>最近の投稿</h2>
             <article>
-                <h3>カテゴリー#4</h3>
-                <p>テスト投稿</p>
+                <h3>テスト投稿</h3>
+                <p class="article-category">カテゴリー#4</p>
                 <a href="https://xeory.jp/extension/demo-top">
-                    <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
-                        alt="パソコン画像"></a>
+                    <figur class="article-img">
+                        <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
+                            alt="パソコン画像">
+                        <figcaption>2014<div></div>10/24</figcaption>
+                        </figure>
+                </a>
             </article>
             <article>
                 <h3>テスト投稿</h3>
-                <p>カテゴリー#1</p>
+                <p class="article-category">カテゴリー#1</p>
                 <a href="https://xeory.jp/extension/demo-top">
-                    <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/rest-time-in-front-of-macbook.png"
-                        alt="カフェ画像">
+                    <figure class="article-img">
+                        <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/rest-time-in-front-of-macbook.png"
+                            alt="カフェ画像">
+                        <figcaption>2014<div></div>10/24</figcaption>
+                    </figure>
             </article>
             <article>
                 <h3>カテゴリー#4</h3>
-                <p>テスト投稿</p>
+                <p class="article-category">テスト投稿</p>
                 <a href="https://xeory.jp/extension/demo-top">
-                    <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
-                        alt="パソコン画像"></a>
+                    <figure class="article-img">
+                        <img src="https://xeory.jp/extension/wp-content/uploads/sites/4/2014/10/MacBook-and-clutter.png"
+                            alt="パソコン画像">
+                        <figcaption>2014<div></div>10/24</figcaption>
+                    </figure>
+                </a>
             </article>
         </section>
 
         <article>
-            <h2>Xeory Extentionの特徴</h2>
+            <h2 class="heading">Xeory Extentionの特徴</h2><!--headigは見出し-->
             <article>
-                <p>1</p>
+                <p class="article-item">1</p>
                 <h3>モバイルレスポンシブ<span>Mobile Responsive</span></h3>
                 <p>Xeory Extensionはレスポンシブデザインを採用しています。スマートフォンやタブレットなど各種デバイスで表示が最適化されます。</p>
-                <p><a href="">詳しく見る</a></p>
+                <p class="btn"><a href="">詳しく見る</a></p>
             </article>
             <article>
-                <p>2</p>
+                <p class="article-item">2</p>
                 <h3>HTML5デザイン<span>HTML5 Design</span></h3>
                 <p>Xeory Extensionは最新のHTML5言語でデザイン及びコーディングがなされています。時代遅れのソースからは卒業しましょう。</p>
-                <p><a href="">詳しく見る</a></p>
+                <p class="btn"><a href="">詳しく見る</a></p>
             </article>
             <article>
-                <p>3</p>
+                <p class="article-item">3</p>
                 <h3>SEO最適化<span>Search Engine Optimized</span></h3>
                 <!--<p>Search Engine Optimized</p><-->
                 <p>Xeory ExtensionはGoogleのSEOガイドラインに可能な限り沿った構造になっています。必要なのは良質なコンテンツだけです。</p>
-                <p><a href="">詳しく見る</a></p>
+                <p class="btn"><a href="">詳しく見る</a></p>
             </article>
             <article>
-                <p>4</p>
+                <p class="article-item">4</p>
                 <h3>高いカスタマイズ性<span>Customizabl</span></h3>
-                <!--下の英語もhで加工<span>とかで-->
-                <p>Customizable</p>
+                <!--下の英語もhで囲う<span>とかで-->
                 <P>Xeory Extensionはカスタマイズフリーです。CSS, HTML, PHP の知識があれば自由にカスタマイズすることができます。</P>
-                <p><a href="">詳しく見る</a></p>
+                <p class="btn"><a href="">詳しく見る</a></p>
             </article>
         </article>
         <!--この辺はarticleなのでは？-->
         <article>
-            <h2>サービス紹介<span>service</span></h2>
+            <h2 class="heasing">サービス紹介<span>service</span></h2>
             <article>
                 <h3>Xeoryカスタマイズ<span>Xeory Customize</span></h3>
-                <p><a href="">カスタマイズ事例を見る</a></p>
+                <p class="btn2"><a href="">カスタマイズ事例を見る</a></p>
             </article>
             <article>
                 <h3>コンサルティング<span>Consulting</span></h3>
-                <p><a href="">コンサルティング事例を見る</a></p>
+                <p class="btn2"><a href="">コンサルティング事例を見る</a></p>
             </article>
         </article>
 
         <section>
-            <h2>会社紹介<span>company</span></h2>
+            <h2 class="heasing">会社紹介<span>company</span></h2>
             <a href="">google地図</a>
             <dl>
                 <dt>会社名</dt>
@@ -137,33 +157,36 @@
         </section>
 
         <section>
-            <h2>お問合せ<span>inquiry</span></h2>
-            <dl>
-                <!--この辺わかんない-->
+            <h2 class="heasing">お問合せ<span>inquiry</span></h2>
+            <dl class="form">
+                <!--この辺わかんない→出来た！-->
                 <dt>お名前（必須）</dt>
-                <dd>記入欄</dd>
+                <dd><input type="text" name="text"></dd>
                 <dt>メールアドレス（必須）</dt>
-                <dd>記入欄</dd>
+                <dd><input type="email" name="email" placeholder="aaa@sample.com"></dd>
                 <dt>メッセージ本文</dt>
-                <dd>記入欄</dd>
-                <dd>送信</dd>
+                <dd><input type="text" name="text"></dd>
+                <input type="submit" value="送信">
                 <!--フォームを入力するタグがある、調べる!!ddにinputタグ入れる？-->
             </dl>
         </section>
     </main>
     <fooder>
         <!--一個だけsectionで加工の微妙pで加工、目次としていらない-->
-            <p>XeoryExtension</p>
-
+        <p class="info">XeoryExtension</p>
         <dl><!--この辺グループ分けする！divを使って？-->
-            <dt>ブログコンテンツ</dt>
-            <dd>記事ページサンプル</dd>
-            <dd>Extensionをダウンロード</dd>
-            <dt>ソーシャルメディア</dt>
-            <dd>Twitter</dd>
-            <dd>Facebook</dd>
-            <dd>google</dd>
-            <dd>Feedly</dd>
+            <div>
+                <dt>ブログコンテンツ</dt>
+                <dd>記事ページサンプル</dd>
+                <dd>Extensionをダウンロード</dd>
+            </div>
+            <div>
+                <dt>ソーシャルメディア</dt>
+                <dd>Twitter</dd>
+                <dd>Facebook</dd>
+                <dd>google</dd>
+                <dd>Feedly</dd>
+            </div>
         </dl>
         <p><small>&copy; Copyright 2023 XeoryExtension. All rights reserved.</small></p>
     </fooder>
