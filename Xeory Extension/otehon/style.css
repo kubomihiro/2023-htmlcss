@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+}
+#header{
+    background-color: #47B39D;
+    height: 92px;
+    display: flex;
+    align-items: center; /*!!!!高さに対しての真ん中に持ってくる*/
+}
+
+.title{
+margin: 0 16px;
+}
+
+.title a {
+    color: #fff;
+    font-size: 24px;
+}
+
+.gnav{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    display: flex;
+}
+
+.gnav-item{
+    list-style-type: none;
+    line-height: 92px;
+}
+
+.gnav-item a{
+    padding : 0 16px;/*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
+    display: block; /*インライン要素からblock要素にする*/
+    color: #fff;
+    text-decoration: none;/*下の棒線を無しにする*/
+    transition: background-color 0.3s ease-out;/*イージング反応に速さ*/
+}
+
+.gnav-item a:hover{  /*カーソルを持ってった時に色変えるやつ*/
+background-color: rgba(255, 255, 255, 0.3);/*255はそれぞれrgb(0から255まで）を表していて、4個目は透明度*/
+}
+
+.main-area{
+     background-color: #41baa4;
+    color: #fff;
+    height: 500px;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+
+.site-tittle{
+    margin-bottom: 16px;
+}
+
+.site-tittle{
+    margin: 0 16px;/*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
+    max-width: 500px;
+    text-align: center;/*テキスト、文字を真ん中にもってくるので大幅な位置は変わらない*/
+}
