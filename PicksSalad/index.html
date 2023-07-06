@@ -11,200 +11,210 @@
 
 <body>
     <header>
-        <h1 class="title">Picks Salad</h1>
-        <ul class="site-menu">
-            <li class="menu-items">Top</li>
-            <li class="menu-items">Concept</li>
-            <li class="menu-items">How to order</li>
-            <li class="menu-items">Menu</li>
-            <li class="menu-items">instagram</li>
-            <li class="menu-items">Store</li>
+        <p class="title-picks-salad">Picks Salad</p>
+        <!-- <h1 class="title">Picks Salad</h1> ここpにしてmainの下article、h1にしても○ -->
+        <ul class="site-menu"><!--itemsのsいらない-->
+            <li class="menu-item">Top</li>
+            <li class="menu-item">Concept</li>
+            <li class="menu-item">How to order</li>
+            <li class="menu-item">Menu</li>
+            <li class="menu-item">instagram</li>
+            <li class="menu-item">Store</li>
         </ul>
     </header>
-    <main class="main">
-        <figure id="slideshow">
-            <img src="http://pickssalad.com/img/main/main_01.jpg" alt="pickssalad" class="slideshow" width="650">
-            <!-- <img src="http://pickssalad.com/img/main/main_02.jpg"alt="サラダの写真" class="slideshow" >
-    <img src="http://pickssalad.com/img/main/main_03.jpg"alt="野菜の写真" class="slideshow" > 
-    <img src="http://pickssalad.com/img/main/main_04.jpg"alt="いろんな野菜の写真" class="slideshow" >
-    <img src="http://pickssalad.com/img/main/main_05.jpg"alt="ラップサンドの写真" class="slideshow" > -->
-        </figure>
-        <section class="section">
-            <h2 class="title-new">It's new!</h2>
+    <main class="main"><!--この下article入れてもあり-->
+        <article>
+            <h1 class="title-picks-salad">Picks Salad</h1>
+            <figure id="slideshow">
+                <img src="http://pickssalad.com/img/main/main_01.jpg" alt="pickssalad" class="slideshow" width="650">
+                <!-- <img src="http://pickssalad.com/img/main/main_02.jpg"alt="サラダの写真" class="slideshow" >
+                     <img src="http://pickssalad.com/img/main/main_03.jpg"alt="野菜の写真" class="slideshow" > 
+                     <img src="http://pickssalad.com/img/main/main_04.jpg"alt="いろんな野菜の写真" class="slideshow" >
+                     <img src="http://pickssalad.com/img/main/main_05.jpg"alt="ラップサンドの写真" class="slideshow" > -->
+            </figure>
             <section class="section">
-                <h3 class="new-lead">ラップサンドはじめました。</h3>
-                <ul class="new-detail"> <!--detail 詳細・細部-->
-                    <li class="new-summary"> <!--概要・要約-->
-                        <h4 class="new-summary-name">① BLTチーズ</h4>
-                        <p class="new-summary-topping">ベーコン・レタス<br>トマト・チーズ</p>
-                        <p class="new-summary-dressing">〈おすすめドレッシング〉<br>バジルジェノベーゼ</p>
+                <h2 class="title-new">It's new!</h2>
+
+                <section class="section">
+                    <h3 class="new-lead">ラップサンドはじめました。</h3>
+                    <ul class="new-detail"> <!--detail 詳細・細部-->
+                        <li class="new-summary"> <!--概要・要約-->
+                            <h4 class="new-summary-name">① BLTチーズ</h4>
+                            <p class="new-summary-topping">ベーコン・レタス<br>トマト・チーズ</p>
+                            <p class="new-summary-dressing">〈おすすめドレッシング〉<br>バジルジェノベーゼ</p>
+                        </li>
+                        <li class="new-summary">
+                            <h4 class="new-summary-name">② 雑穀&サーモン</h4>
+                            <p class="new-summary-topping">雑穀・サーモン<br>オリーブ・にんじんラペ</p>
+                            <p class="new-summary-dressing">〈おすすめドレッシング〉<br>オニオンセサミ</p>
+                        </li>
+                    </ul>
+                    <p class="new-note">＊その他お好きなトッピング4品を選んでいただきカスタムもできます！</p><!--注釈-->
+                </section>
+                <section class="section">
+                    <h2 class="title-price">Price</h2><!--h3でnewの中に入れる-->
+                    <dl class="new-price-detail">
+                        <dt class="new-price-name">ラップサンド</dt>
+                        <dd class="new-price">
+                            <span class="en">¥350 </span> <!--インライン要素のグルーピング-->
+                            <span class="zei">〈 税込 〉</span>
+                        </dd>
+                        <dt class="new-price-name">スープセット</dt>
+                        <dd class="new-price">
+                            <span class="en">¥500 </span>
+                            <span class="zei">〈 税込 〉</span>
+                        </dd>
+                    </dl>
+                </section>
+            </section>
+            <section class="section-2">
+                <h2 class="title-concept">Concept</h2>
+                <section class="section-2">
+                    <h3 class="concept-lead">Build your own salad !　自分だけのとっておきサラダを食べよう！</h3><!--class名kyattikopi--とか-->
+                    <p class="concept-text">Picks Saladでは朝市の新鮮なリーフサラダをベースに16種類以上のトッピングからお好きな組み合わせを<br>
+                        お選び頂けます。ご注文をいただいてから組み立てるため、いつでも作りたて。慌ただしい朝に。<br>
+                        仕事の合間の昼食に。食事のバランスを考えた夕飯に。食の主役として、そして日々のたいせつな栄養素を薬や<br>
+                        サプリメントの代わりとして。自分の好きな組み合わせを見つけてマイスペシャルを作ったり、<br>
+                        その日の気分に合わせて違う味を楽しんだり。ボリューミー&ヘルシーなサラダをお楽しみください！</p>
+                </section>
+            </section>
+            <section class="section">
+                <h2 class="title-order">How to order</h2>
+                <!--囲いミス！！！！！-->
+                <p class="order-lead">自分だけのカスタムサラダの作り方！</p>
+                <!--!!!ここ写真をhタグ、section、pでコメント　、じゅんバッm月リストおl-->
+                <ul class="order-salad">
+                    <li class="order-salad-make">
+                        <p class="order-salad-text">リーフサラダをベースに16種類以上のトッピングから5種類をえらびます。</p>
+                        <img src="http://pickssalad.com/img/order/order_step1.jpg" alt="野菜の写真" width="320">
                     </li>
-                    <li class="new-summary">
-                        <h4 class="new-summary-name">② 雑穀&サーモン</h4>
-                        <p class="new-summary-topping">雑穀・サーモン<br>オリーブ・にんじんラペ</p>
-                        <p class="new-summary-dressing">〈おすすめドレッシング〉<br>オニオンセサミ</p>
+                    <li class="order-salad-make">
+                        <p class="order-salad-text">5種類以上のドレッシングからお好きなものをえらび、大きなボールで和えます。</p>
+                        <img src="http://pickssalad.com/img/order/order_step2.jpg" alt="ドレッシングの写真" width="320">
+                    </li>
+                    <li class="order-salad-make">
+                        <p class="order-salad-text">あなただけのオリジナルサラダの完成！</P>
+                        <img src="http://pickssalad.com/img/order/order_step3.jpg" alt="サラダボールの写真" width="320">
                     </li>
                 </ul>
-                <p class="new-note">＊その他お好きなトッピング4品を選んでいただきカスタムもできます！</p><!--注釈-->
             </section>
-        </section>
-        <section class="section">
-            <h2 class="title-price">Price</h2>
-            <dl class="new-price-detail">
-                <dt class="new-price-name">ラップサンド</dt>
-                <dd class="new-price">
-                    <span class="en">¥350 </span> <!--インライン要素のグルーピング-->
-                    <span class="zei">〈 税込 〉</span>
-                </dd>
-                <dt class="new-price-name">スープセット</dt>
-                <dd class="new-price">
-                    <span class="en">¥500 </span>
-                    <span class="zei">〈 税込 〉</span>
-                </dd>
-            </dl>
-        </section>
-        <section class="section-2">
-            <h2 class="title-concept">Concept</h2>
+            <section class="section">
+
+                <h3 class="title-salad-dressing">こだわりのドレッシング</h3>
+                <ul class="salad-dressing-type">
+                    <li class="salad-dressing">キャロットジンジャー</li>
+                    <li class="salad-dressing">バジルのジェノベーゼ</li>
+                    <li class="salad-dressing">オレンジマスタード</li>
+                    <li class="salad-dressing">オニオンセサミ</li>
+                    <li class="salad-dressing">アンチョビチーズのシーザー</li>
+                    <li class="salad-dressing">フレッシュレモン＆オイル</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2 class="title">Price</h2>
+                <dl class="salad-price-detail">
+                    <dt class="price-sarad"><img src="http://pickssalad.com/img/decoration/price_salad.png"
+                            widtth="96">サラダ</dt>
+                    <dd class="salad-price">
+                        <span class="size">M</span>
+                        <span class="en">¥600 </span>
+                        <span class="size">L</span>
+                        <span class="en">¥700</span>
+                        <span class="zei">〈 税込 〉</span>
+                    </dd>
+
+                </dl> <!--ここ囲わなくても-->
+
+                <dl class="salad-price-detail"> <!--class名priceの所同じに考える-->
+                    <dt class="icon"><img src="http://pickssalad.com/img/decoration/price_set.png"
+                            widtth="96">セット<span>〈
+                            パン&スープ 〉</span></dt>
+                    <dd class="salad-price">
+                        <span class="plus">+</span>
+                        <span class="en">¥250 </span>
+                        <span class="zei">〈 税込 〉</span>
+                    </dd>
+                </dl>
+            </section>
+
+            <section class="section-2"> <!--ーこういう名前ng-->
+                <h2 class="title">Menu</h2><!--この名前ダメ　menuとか-->
+                <p class="description">組み合わせによってこんなサラダが作れます！</p>
+                <dl class="salad-menu"> <!--sectionの場合もある-->
+                    <dt class="salad-menu-name">グリルドチキンのシーザーサラダ</dt>
+                    <dd>
+                        <span class="salad-menu-ingredients">チキン・ポテト・卵・トマト・クルトン</span>
+                        <span class="salad-menu-dressing">シーザードレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_caesar.jpg" alt="グリルドチキンのシーザーサラダ" width="304">
+                    </dd>
+                </dl>
+
+                <dl class="salad-menu">
+                    <dt class="salad-menu-name">コブサラダ</dt>
+                    <dd class="salad-menu-detail">
+                        <span class="salad-menu-ingredients">コーン・トマト・オリーブ・厚切りベーコン・アボカド</span>
+                        <span class="salad-menu-dressing">バジルドレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_cobb.jpg" alt="コブサラダ" width="304">
+                    </dd>
+                </dl>
+                <dl class="salad-menu">
+                    <dt class="salad-menu-name">クリーミーアボカドのビタミンサラダ</dt>
+                    <dd>
+                        <span class="salad-menu-ingredients">にんじん・きのこマリネ・アボカド・トマト・パプリカ</span>
+                        <span class="salad-menu-dressing">オレンジドレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_avocado.jpg" alt="クリーミーアボカドのビタミンサラダ" width="304">
+                    </dd>
+                </dl>
+                <dl class="salad-menu">
+                    <dt class="salad-menu-name">ボリュームたっぷりパワーサラダ</dt>
+                    <dd>
+                        <span class="salad-menu-ingredients">チキン・ポテト・卵・いんげん・穀物</span>
+                        <span class="salad-menu-dressing">バジルドレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_power.jpg" alt="ボリュームたっぷりパワーサラダ" width="304">
+                    </dd>
+                </dl>
+                <dl class="salad-menu">
+                    <dt class="salad-menu-name">ビーガンサラダ</dt>
+                    <dd>
+                        <span class="salad-menu-ingredients">にんじん・きのこマリネ・マッシュルーム・トマト・コーン</span>
+                        <span class="salad-menu-dressing">玉ねぎとゴマの和風ドレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_vegan.jpg" alt="ビーガンサラダ" width="304">
+                    </dd>
+                </dl>
+                <dl class="salad-menu">
+                    <dt class="salad-menu-name">雑穀とチーズのヘルシーサラダ</dt>
+                    <dd>
+                        <span class="salad-menu-ingredients">チーズ・トマト・いんげん・雑穀・ナッツ</span>
+                        <span class="salad-menu-dressing">にんじんドレッシング</span>
+                        <img src="http://pickssalad.com/img/menu/menu_healthy.jpg" alt="雑穀とチーズのヘルシーサラダ" width="304">
+                    </dd>
+                </dl>
+
+                <p class=menu-note>＊ 写真はイメージです。実際のサラダは和えた状態でご提供いたします。</p>
+            </section>
+            <section class="section"> <!--pとa逆では？-->
+                <h2 class="title">Instagram</h2>
+                <a href="https://www.instagram.com/pickssalad/">
+                    <img src="http://pickssalad.com/img/instagram/instagram.jpg" alt="Follow me #pickssalad " width=960>
+                    <p class="tag">#pickssalad</p>
+                </a>
+            </section>
             <section class="section-2">
-                <h3 class="concept-lead">Build your own salad !　自分だけのとっておきサラダを食べよう！</h3>
-                <p class="concept-text">Picks Saladでは朝市の新鮮なリーフサラダをベースに16種類以上のトッピングからお好きな組み合わせを<br>
-                    お選び頂けます。ご注文をいただいてから組み立てるため、いつでも作りたて。慌ただしい朝に。<br>
-                    仕事の合間の昼食に。食事のバランスを考えた夕飯に。食の主役として、そして日々のたいせつな栄養素を薬や<br>
-                    サプリメントの代わりとして。自分の好きな組み合わせを見つけてマイスペシャルを作ったり、<br>
-                    その日の気分に合わせて違う味を楽しんだり。ボリューミー&ヘルシーなサラダをお楽しみください！</p>
+                <h2 class="title">Store</h2>
+                <dl class="store">
+                    <dt class="store-shop">Picks Salad <span>〈 サラダ専門店 〉</span> </dt>
+                    <dd class="store-name">ピックスサラダ</dd>
+                </dl>
+                <ul class="store-information">
+                    <li class="information">Address ｜ 〒980-0021 宮城県仙台市青葉区中央4丁目3‐1　仙台朝市　東四市場1F</li>
+                    <li class="information">Tel ｜ 022-263-5820</li>
+                    <li class="information">Open ｜ 7:00〜 （日曜・祝日は定休）</li>
+                </ul>
+                <p class="store-none">＊ テイクアウトのみ。店内に飲食スペースはございません。</p>
+                <iframe class="company-map"
+                    src="https://www.google.com/maps?ll=38.258594,140.878964&z=17&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92980-0021+%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E4%B8%AD%E5%A4%AE%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91"></iframe>
             </section>
-        </section>
-        <section class="section">
-            <h2 class="title-order">How to order</h2>
-            <p class="order-lead">自分だけのカスタムサラダの作り方！</p>
-            <ul class="order-salad">
-                <li class="order-salad-make">
-                    <p class="order-salad-text">リーフサラダをベースに16種類以上のトッピングから5種類をえらびます。</p>
-                    <img src="http://pickssalad.com/img/order/order_step1.jpg" alt="野菜の写真" width="320">
-                </li>
-                <li class="order-salad-make">
-                    <p class="order-salad-text">5種類以上のドレッシングからお好きなものをえらび、大きなボールで和えます。</p>
-                    <img src="http://pickssalad.com/img/order/order_step2.jpg" alt="ドレッシングの写真" width="320">
-                </li>
-                <li class="order-salad-make">
-                    <p class="order-salad-text">あなただけのオリジナルサラダの完成！</P>
-                    <img src="http://pickssalad.com/img/order/order_step3.jpg" alt="サラダボールの写真" width="320">
-                </li>
-            </ul>
-        </section>
-        <section class="section">
-            <h3 class="title-salad-dressing">こだわりのドレッシング</h3>
-            <ul class="salad-dressing-type">
-                <li class="salad-dressing">キャロットジンジャー</li>
-                <li class="salad-dressing">バジルのジェノベーゼ</li>
-                <li class="salad-dressing">オレンジマスタード</li>
-                <li class="salad-dressing">オニオンセサミ</li>
-                <li class="salad-dressing">アンチョビチーズのシーザー</li>
-                <li class="salad-dressing">フレッシュレモン＆オイル</li>
-            </ul>
-        </section>
-        <section class="section">
-            <h2 class="title">Price</h2>
-            <dl class="salad-price-detail">
-                <dt class="price-sarad"><img src="http://pickssalad.com/img/decoration/price_salad.png" widtth="96">サラダ</dt>
-                <dd class="salad-price">
-                    <span class="size">M</span>
-                    <span class="en">¥600 </span>
-                    <span class="size">L</span>
-                    <span class="en">¥700</span>
-                    <span class="zei">〈 税込 〉</span>
-                </dd>
-                
-            </dl>
-
-            <dl class="salad-price-detail">
-                <dt class="icon"><img src="http://pickssalad.com/img/decoration/price_set.png" widtth="96">セット<span>〈
-                    パン&スープ 〉</span></dt>
-                <dd class="salad-price">
-                    <span class="plus">+</span>
-                    <span class="en">¥250 </span>
-                    <span class="zei">〈 税込 〉</span>
-                </dd>
-            </dl>
-        </section>
-
-        <section class="section-2">
-            <h2 class="title">Menu</h2>
-            <p class="description">組み合わせによってこんなサラダが作れます！</p>
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">グリルドチキンのシーザーサラダ</dt>
-                <dd>
-                    <span class="salad-menu-ingredients">チキン・ポテト・卵・トマト・クルトン</span>
-                    <span class="salad-menu-dressing">シーザードレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_caesar.jpg" alt="グリルドチキンのシーザーサラダ" width="304">
-                </dd>
-            </dl>
-
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">コブサラダ</dt>
-                <dd class="salad-menu-detail">
-                    <span class="salad-menu-ingredients">コーン・トマト・オリーブ・厚切りベーコン・アボカド</span>
-                    <span class="salad-menu-dressing">バジルドレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_cobb.jpg" alt="コブサラダ" width="304">
-                </dd>
-            </dl>
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">クリーミーアボカドのビタミンサラダ</dt>
-                <dd>
-                    <span class="salad-menu-ingredients">にんじん・きのこマリネ・アボカド・トマト・パプリカ</span>
-                    <span class="salad-menu-dressing">オレンジドレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_avocado.jpg" alt="クリーミーアボカドのビタミンサラダ" width="304">
-                </dd>
-            </dl>
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">ボリュームたっぷりパワーサラダ</dt>
-                <dd>
-                    <span class="salad-menu-ingredients">チキン・ポテト・卵・いんげん・穀物</span>
-                    <span class="salad-menu-dressing">バジルドレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_power.jpg" alt="ボリュームたっぷりパワーサラダ" width="304">
-                </dd>
-            </dl>
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">ビーガンサラダ</dt>
-                <dd>
-                    <span class="salad-menu-ingredients">にんじん・きのこマリネ・マッシュルーム・トマト・コーン</span>
-                    <span class="salad-menu-dressing">玉ねぎとゴマの和風ドレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_vegan.jpg" alt="ビーガンサラダ" width="304">
-                </dd>
-            </dl>
-            <dl class="salad-menu">
-                <dt class="salad-menu-name">雑穀とチーズのヘルシーサラダ</dt>
-                <dd>
-                    <span class="salad-menu-ingredients">チーズ・トマト・いんげん・雑穀・ナッツ</span>
-                    <span class="salad-menu-dressing">にんじんドレッシング</span>
-                    <img src="http://pickssalad.com/img/menu/menu_healthy.jpg" alt="雑穀とチーズのヘルシーサラダ" width="304">
-                </dd>
-            </dl>
-
-            <p class=menu-note>＊ 写真はイメージです。実際のサラダは和えた状態でご提供いたします。</p>
-        </section>
-        <section class="section">
-            <h2 class="title">Instagram</h2>
-            <a href="https://www.instagram.com/pickssalad/">
-                <img src="http://pickssalad.com/img/instagram/instagram.jpg" alt="Follow me #pickssalad " width=960>
-                <p class="tagu">#pickssalad</p>
-            </a>
-        </section>
-        <section class="section-2">
-            <h2 class="title">Store</h2>
-            <dl class="store">
-                <dt class="store-shop">Picks Salad <span>〈 サラダ専門店 〉</span> </dt>
-                <dd class="store-name">ピックスサラダ</dd>
-            </dl>
-            <ul class="store-information">
-                <li class="information">Address ｜ 〒980-0021 宮城県仙台市青葉区中央4丁目3‐1　仙台朝市　東四市場1F</li>
-                <li class="information">Tel ｜ 022-263-5820</li>
-                <li class="information">Open ｜ 7:00〜 （日曜・祝日は定休）</li>
-            </ul>
-            <p class="store-none">＊ テイクアウトのみ。店内に飲食スペースはございません。</p>
-            <iframe class="company-map"
-                src="https://www.google.com/maps?ll=38.258594,140.878964&z=17&t=m&hl=ja&gl=US&mapclient=embed&q=%E3%80%92980-0021+%E5%AE%AE%E5%9F%8E%E7%9C%8C%E4%BB%99%E5%8F%B0%E5%B8%82%E9%9D%92%E8%91%89%E5%8C%BA%E4%B8%AD%E5%A4%AE%EF%BC%94%E4%B8%81%E7%9B%AE%EF%BC%93%E2%88%92%EF%BC%91"></iframe>
-        </section>
+        </article>
     </main>
     <footer class="footer">
         <p class="footer-name">PicksSalad</p>
@@ -213,3 +223,5 @@
 </body>
 
 </html>
+<!---hの解釈気を付ける!!!!!->
+<!-class名で数字はng->

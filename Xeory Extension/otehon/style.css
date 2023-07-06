@@ -1,20 +1,22 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     margin: 0;
 }
-#header{
+
+#header {
     background-color: #47B39D;
     height: 92px;
     display: flex;
-    align-items: center; /*!!!!高さに対しての真ん中に持ってくる*/
+    align-items: center;
+    /*!!!!高さに対しての真ん中に持ってくる*/
 }
 
-.title{
-margin: 0 16px;
+.title {
+    margin: 0 16px;
 }
 
 .title a {
@@ -22,46 +24,126 @@ margin: 0 16px;
     font-size: 24px;
 }
 
-.gnav{
+.gnav {
     position: absolute;
     top: 0;
     right: 16px;
     display: flex;
 }
 
-.gnav-item{
+.gnav-item {
     list-style-type: none;
     line-height: 92px;
 }
 
-.gnav-item a{
-    padding : 0 16px;/*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
-    display: block; /*インライン要素からblock要素にする*/
+.gnav-item a {
+    padding: 0 16px;
+    /*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
+    display: block;
+    /*インライン要素からblock要素にする*/
     color: #fff;
-    text-decoration: none;/*下の棒線を無しにする*/
-    transition: background-color 0.3s ease-out;/*イージング反応に速さ*/
+    text-decoration: none;
+    /*下の棒線を無しにする*/
+    transition: background-color 0.3s ease-out;
+    /*イージング反応に速さ*/
 }
 
-.gnav-item a:hover{  /*カーソルを持ってった時に色変えるやつ*/
-background-color: rgba(255, 255, 255, 0.3);/*255はそれぞれrgb(0から255まで）を表していて、4個目は透明度*/
+.gnav-item a:hover {
+    /*カーソルを持ってった時に色変えるやつ*/
+    background-color: rgba(255, 255, 255, 0.3);
+    /*255はそれぞれrgb(0から255まで）を表していて、4個目は透明度*/
 }
 
-.main-area{
-     background-color: #41baa4;
+.main-area {
+    background-color: #41baa4;
     color: #fff;
     height: 500px;
     display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.site-tittle{
+.site-title {
     margin-bottom: 16px;
+
 }
 
-.site-tittle{
-    margin: 0 16px;/*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
+.site-title {
+    margin: 0 16px;
+    /*top bottomが0でleft rightがそれぞれ16pxずつある、略*/
     max-width: 500px;
-    text-align: center;/*テキスト、文字を真ん中にもってくるので大幅な位置は変わらない*/
+    /*文字の最大幅を500pxにした*/
+    text-align: center;
+    /*テキスト、文字を真ん中にもってくるので大幅な位置は変わらない*/
+    text-decoration: none;
+}
+
+.entry {
+    margin: 50px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+
+}
+
+.entry-title {
+    padding: 16px;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+
+}
+
+.entries {
+    display: flex;
+    flex-wrap: wrap;
+    /*100%以上になると落ちるやつ*/
+    padding: 0px 60px;
+
+}
+
+.entry-item {
+    /* width: 200px; */
+    display: flex;
+    flex-direction: column-reverse;
+    /*並びを上下逆にする*/
+    margin: 8px;
+    /* border: 2px solid #eee; */
+    width: calc(20% - 20px);
+    /*このサイトの場合は小さくしたら記事も小さくなる 写真のサイズー(横幅8px ×2)＋（border2px　×2）*/
+    /* color: #000; */
+    padding: 40px 0px;
+}
+
+/* .entry-item-title,
+.entry-item-category{
+background-color: red;
+} */
+
+.entry-item img {
+    width: 100%;
+    /*これをすると画像がはみ出ない*/
+    margin: 0px 0px 12px;
+}
+
+.entry-item a {
+    text-decoration: none;
+    /*下の棒線無くす*/
+}
+
+.entry-item-category {
+    background-color: #41baa4;
+    text-align: center;
+    font-size: 12px;
+    margin: 0px 100px 0px 0px;
+    padding: 8px 24px;
+    color: #fff;
+
+}
+
+.entry-item-title {
+    color: #000;
+    font-weight: normal;
 }
