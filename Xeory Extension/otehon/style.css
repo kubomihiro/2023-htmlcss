@@ -79,10 +79,16 @@ body {
     text-decoration: none;
 }
 
+#main{
+    background-color: #f5f5f5;
+}
+
 .entry {
     margin: 50px 0;
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    background-color: #fff;
+
 
 }
 
@@ -98,23 +104,30 @@ body {
 
 .entries {
     display: flex;
-    flex-wrap: wrap;
-    /*100%以上になると落ちるやつ*/
-    padding: 0px 60px;
+    /* flex-wrap: wrap; 100%以上になると落ちるやつ */
+    /* padding: 0px 60px; */
+    margin: 0 auto;
+max-width: 1200px; /*中身の最大値が1200px */
+flex-wrap: wrap;  /*子供の幅に応じて単１行に押し込むか、あるいは複数に折り返しても良いかを指定 */
+padding: 24px 0 40px 0;
+
 
 }
 
 .entry-item {
+    margin: 0 10px;
     /* width: 200px; */
     display: flex;
     flex-direction: column-reverse;
     /*並びを上下逆にする*/
-    margin: 8px;
+   
     /* border: 2px solid #eee; */
-    width: calc(20% - 20px);
+    width: calc(20% - 20px); 
     /*このサイトの場合は小さくしたら記事も小さくなる 写真のサイズー(横幅8px ×2)＋（border2px　×2）*/
     /* color: #000; */
-    padding: 40px 0px;
+    /* padding: 40px 0px; */
+    border: 1px solid #eee;
+    box-sizing: border-box; /* borderで2pxを超えてしまったので100%以上になり落ちてしまうので(display-flex)そうならない様にこれを入れると内側？でまとまる*/
 }
 
 /* .entry-item-title,
@@ -122,10 +135,11 @@ body {
 background-color: red;
 } */
 
-.entry-item img {
+.entry-item-img img {
     width: 100%;
     /*これをすると画像がはみ出ない*/
-    margin: 0px 0px 12px;
+    /* margin: 0px 0px 12px; */
+ display: block;    /* 画像の下の謎の空白がこれで無くなる */
 }
 
 .entry-item a {
@@ -133,17 +147,82 @@ background-color: red;
     /*下の棒線無くす*/
 }
 
-.entry-item-category {
+.entry-item-category{
+    width: 100%;
+    margin: 8px 0;
+}
+
+.entry-item-category a{
     background-color: #41baa4;
-    text-align: center;
+    /* text-align: center;
     font-size: 12px;
-    margin: 0px 100px 0px 0px;
-    padding: 8px 24px;
+    margin: 0px 100px 0px 0px; */
+    padding: 8px 16px;
+    display: inline-block;  /* インライン要素のいいとこ取り　あんまりズレない様になる */
     color: #fff;
 
 }
 
-.entry-item-title {
-    color: #000;
+.entry-item-title a{
+    color: #333;
     font-weight: normal;
+}
+
+.contents-item-title{
+    padding: 24px 0;
+    background-color: #3B4552;
+    color: #fff;
+    text-align: center;
+font-size: normal;
+position: relative;
+}
+
+.contents-item-title:after { /*擬似クラス before contentが必要　空の何かを作りたい時*/
+    content: '' ; 
+    display: block;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border: 20px solid #3B4552;
+    border-bottom: none;
+    border-left: 60px solid transparent; /*透明にする*/
+    border-right: 60px solid transparent;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+}
+
+.entry-item-title-en{
+    display: block;
+    font-size: 13px;
+}
+
+.feature{
+    height: 500px;
+    position: relative;
+     overflow: hidden;
+}
+
+.feature:nth-child(even)/*親から見た時（div)から見た偶数*/ {
+    padding-left: 500px;
+}
+
+.feature-img{
+position: absolute;
+top: 0;
+width: 500px;
+overflow: hidden;
+}
+
+.feature:nth-child(odd)/*親から見た時（div)から見た奇数*/ .feature-img{
+    right: 0;
+}
+
+.feature:nth-child(even)/*親から見た時（div)から見た偶数*/  .feature-img{
+    left: 0;
+}
+
+.feature-img img{
+    margin-left: -200px;
 }
