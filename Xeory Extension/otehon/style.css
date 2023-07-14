@@ -169,12 +169,18 @@ background-color: red;
 }
 
 .contents-item-title{
-    padding: 24px 0;
+    padding: 60px 24px 60px 24px;
     background-color: #3B4552;
     color: #fff;
     text-align: center;
-font-size: normal;
+/* font-size: normal; */
+font-size: 25px;
+font-weight: normal;
 position: relative;
+}
+
+.contents-item-title-en{
+font-size: 15px;
 }
 
 .contents-item-title:after { /*擬似クラス before contentが必要　空の何かを作りたい時*/
@@ -202,11 +208,14 @@ position: relative;
     height: 500px;
     position: relative;
      overflow: hidden;
+     padding: 0px 50px ;
+     border: 1px solid red;
+
 }
 
 .feature:nth-child(even)/*親から見た時（div)から見た偶数*/ {
     padding-left: 500px;
-}
+    margin: 0 8px 0 0;}
 
 .feature-img{
 position: absolute;
@@ -217,6 +226,7 @@ overflow: hidden;
 
 .feature:nth-child(odd)/*親から見た時（div)から見た奇数*/ .feature-img{
     right: 0;
+    border: red;
 }
 
 .feature:nth-child(even)/*親から見た時（div)から見た偶数*/  .feature-img{
@@ -225,4 +235,35 @@ overflow: hidden;
 
 .feature-img img{
     margin-left: -200px;
+}
+
+.feature-title-num{
+    display: inline-block;
+    background-color: #41baa4;
+    color: #fff;
+    height: 20px;
+    padding: 45px 12px 10px ;
+    margin: 0px 0px 32px;
+    text-align: center;
+    
+}
+
+.feature-title{
+    color: #47B39D;
+    font-weight: normal;
+    font-size: 35px;
+}
+
+.feature-title-en{
+    color: #47B39D;
+    font-weight: normal;
+    font-size: 13px;
+}
+
+.btn-orange a{
+    display: inline-block;
+    background-color: #FF6C00;
+ color: #fff;
+    text-decoration: none;
+    padding: 10px 46px 10px 46px;
 }
