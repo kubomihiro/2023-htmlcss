@@ -431,11 +431,14 @@ body {
     background-color: #031731;
     color: #fff;
     padding: 48px 0 0 0;
-    border-top:8px solid #3B4552;
+    border-top: 8px solid #3B4552;
 }
+
 
 .footer-list-container {
     display: flex;
+    /* flexは親要素につける */
+    padding: 50px 100px 50px 70px;
 }
 
 .footer-list-item a {
@@ -445,19 +448,26 @@ body {
 
 .footer-list {
     font-weight: normal;
+    text-align: left;
 }
 
-.footer-list:nth-child(2) {
-    text-align: right;
+.footer-list-title{
+    padding: 20px 30px 20px 0px;
 }
+
+.footer-list-item{
+    padding: 10px 30px 10px 0px;
+}
+
 
 
 .site-name {
     font-size: 50px;
-    padding: 30px 50px ;
+    padding: 30px 50px;
     font-size: larger;
     font-size: 25px;
-    border-bottom:1px solid #3B4552;
+    border-bottom: 1px solid #3B4552;
+    margin: 0 20px 32px 20px;
 }
 
 .company-map {
@@ -471,4 +481,5 @@ body {
     background-color: black;
     text-align: center;
     padding: 30px 0;
+    font-size: 14.5px;
 }
