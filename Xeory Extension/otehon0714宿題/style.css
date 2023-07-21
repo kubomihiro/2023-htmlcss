@@ -79,7 +79,7 @@ body {
     text-decoration: none;
 }
 
-#main{
+#main {
     background-color: #f5f5f5;
 }
 
@@ -107,9 +107,11 @@ body {
     /* flex-wrap: wrap; 100%以上になると落ちるやつ */
     /* padding: 0px 60px; */
     margin: 0 auto;
-max-width: 1200px; /*中身の最大値が1200px */
-flex-wrap: wrap;  /*子供の幅に応じて単１行に押し込むか、あるいは複数に折り返しても良いかを指定 */
-padding: 24px 0 40px 0;
+    max-width: 1200px;
+    /*中身の最大値が1200px */
+    flex-wrap: wrap;
+    /*子供の幅に応じて単１行に押し込むか、あるいは複数に折り返しても良いかを指定 */
+    padding: 24px 0 40px 0;
 
 
 }
@@ -120,14 +122,15 @@ padding: 24px 0 40px 0;
     display: flex;
     flex-direction: column-reverse;
     /*並びを上下逆にする*/
-   
+
     /* border: 2px solid #eee; */
-    width: calc(20% - 20px); 
+    width: calc(20% - 20px);
     /*このサイトの場合は小さくしたら記事も小さくなる 写真のサイズー(横幅8px ×2)＋（border2px　×2）*/
     /* color: #000; */
     /* padding: 40px 0px; */
     border: 1px solid #eee;
-    box-sizing: border-box; /* borderで2pxを超えてしまったので100%以上になり落ちてしまうので(display-flex)そうならない様にこれを入れると内側？でまとまる*/
+    box-sizing: border-box;
+    /* borderで2pxを超えてしまったので100%以上になり落ちてしまうので(display-flex)そうならない様にこれを入れると内側？でまとまる*/
 }
 
 
@@ -135,7 +138,8 @@ padding: 24px 0 40px 0;
     width: 100%;
     /*これをすると画像がはみ出ない*/
     /* margin: 0px 0px 12px; */
- display: block;    /* 画像の下の謎の空白がこれで無くなる */
+    display: block;
+    /* 画像の下の謎の空白がこれで無くなる */
 }
 
 .entry-item a {
@@ -143,50 +147,54 @@ padding: 24px 0 40px 0;
     /*下の棒線無くす*/
 }
 
-.entry-item-category{
+.entry-item-category {
     width: 100%;
     margin: 8px 0;
 }
 
-.entry-item-category a{
+.entry-item-category a {
     background-color: #41baa4;
     padding: 8px 16px;
-    display: inline-block;  /* インライン要素のいいとこ取り　あんまりズレない様になる */
+    display: inline-block;
+    /* インライン要素のいいとこ取り　あんまりズレない様になる */
     color: #fff;
 
 }
 
-.entry-item-title a{
+.entry-item-title a {
     color: #333;
     font-weight: normal;
 }
 
-.contents-item-title{
+.contents-item-title {
     padding: 60px 24px 60px 24px;
     background-color: #3B4552;
     color: #fff;
     text-align: center;
-/* font-size: normal; */
-font-size: 25px;
-font-weight: normal;
-position: relative;
-z-index: 1;/*重なり順　数値が低いほど下にいく（-など）*/
+    /* font-size: normal; */
+    font-size: 25px;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+    /*重なり順　数値が低いほど下にいく（-など）*/
 }
 
-.contents-item-title-en{
-font-size: 15px;
-display: block;
+.contents-item-title-en {
+    font-size: 15px;
+    display: block;
 }
 
-.contents-item-title:after { /*擬似クラス before contentが必要　空の何かを作りたい時*/
-    content: '' ; 
+.contents-item-title:after {
+    /*擬似クラス before contentが必要　空の何かを作りたい時*/
+    content: '';
     display: block;
     margin: 0 auto;
     width: 0;
     height: 0;
     border: 20px solid #3B4552;
     border-bottom: none;
-    border-left: 60px solid transparent; /*透明にする*/
+    border-left: 60px solid transparent;
+    /*透明にする*/
     border-right: 60px solid transparent;
     position: absolute;
     bottom: -20px;
@@ -194,29 +202,37 @@ display: block;
     right: 0;
 }
 
-.entry-item-title-en{
+.entry-item-title-en {
     display: block;
     font-size: 13px;
 }
 
-.feature{
+.feature {
     height: 500px;
-    position: relative; /*positionを入れると重なり順が上に来る*/
-    overflow: hidden;/*はみ出てる領域を如何見せるか制御する (hiddenの場合は見えなくさせる）*/
+    position: relative;
+    /*positionを入れると重なり順が上に来る*/
+    overflow: hidden;
+    /*はみ出てる領域を如何見せるか制御する (hiddenの場合は見えなくさせる）*/
     padding: 0 50px;
     border-bottom: 1px solid #e5e5e5;
 }
 
-.feature:nth-child(odd)/*親から見た時（div)から見た偶数*/ {
+.feature:nth-child(odd)
+
+/*親から見た時（div)から見た偶数*/
+    {
     padding-right: 550px;
     background-color: #fafafa;
 }
 
-.feature:nth-child(even)/*親から見た時（div)から見た偶数*/ {
+.feature:nth-child(even)
+
+/*親から見た時（div)から見た偶数*/
+    {
     padding-left: 550px;
 }
 
-.feature-img{
+.feature-img {
     position: absolute;
     top: 0;
     width: 500px;
@@ -224,48 +240,50 @@ display: block;
 }
 
 /*親から見た時（div)から見た奇数*/
-.feature:nth-child(odd) .feature-img{
+.feature:nth-child(odd) .feature-img {
     right: 0;
 }
 
 /*親から見た時（div)から見た偶数*/
-.feature:nth-child(even)  .feature-img{
+.feature:nth-child(even) .feature-img {
     left: 0;
 }
 
-.feature-img img{
+.feature-img img {
     margin-left: -200px;
 }
 
-.feature-title-num{
-     padding: 40px 0 16px;
-     background: #47B39D;
-     width: 40px;
-     text-align: center;
-     color: #fff;
-     display: block; /*改行する性質(span,em,strongは改行しないタグはインライン要素　文章に対しての意味を持つタグ)*/
-     font-size: 13px;
-     margin-bottom: 24px;
+.feature-title-num {
+    padding: 40px 0 16px;
+    background: #47B39D;
+    width: 40px;
+    text-align: center;
+    color: #fff;
+    display: block;
+    /*改行する性質(span,em,strongは改行しないタグはインライン要素　文章に対しての意味を持つタグ)*/
+    font-size: 13px;
+    margin-bottom: 24px;
 
 }
 
-.feature-title{
+.feature-title {
     color: #47B39D;
     font-weight: normal;
     font-size: 36px;
     margin-bottom: 24px;
 }
 
-.feature-title-en{
+.feature-title-en {
     color: #47B39D;
     font-weight: normal;
     font-size: 13px;
-    display: block; /*改行する性質(インラインは主に改行しない*/
+    display: block;
+    /*改行する性質(インラインは主に改行しない*/
     /* span,em,strongは改行しないタグはインライン要素　文章に対しての意味を持つタグ  */
 }
 
-.feature-text{
-margin-bottom: 20px; 
+.feature-text {
+    margin-bottom: 20px;
 }
 
 .btn a {
@@ -274,9 +292,9 @@ margin-bottom: 20px;
     border-radius: 5px;
     border-radius: 5px;
     /* 角を丸くする */
-text-decoration: none;
-display: inline-block;
-transition: opacity 0.3s ease-out;
+    text-decoration: none;
+    display: inline-block;
+    transition: opacity 0.3s ease-out;
 }
 
 .btn a:hover {
@@ -284,21 +302,21 @@ transition: opacity 0.3s ease-out;
     /* 半透明にする */
 }
 
-.btn.orange a{
+.btn.orange a {
     background-color: #FF6C00;
 }
 
-.btn.green a{
-background-color: #47B39D;
+.btn.green a {
+    background-color: #47B39D;
 }
 
-.services{
+.services {
     display: flex;
     height: 350px;
     text-align: center;
 }
 
-.service{
+.service {
     width: 50%;
     /* 幅の値 */
     padding: 100px 50px;
@@ -310,12 +328,14 @@ background-color: #47B39D;
     border: 500px solid red;
     background-color: #3B4552;
 }
+
 .service-title h4:nth-child(1) {
     background-color: #3B4552;
 }
+
 /* ---------------------------- */
 
-.service-title{
+.service-title {
     font-size: 35px;
     color: #41baa4;
     font-weight: normal;
@@ -323,109 +343,132 @@ background-color: #47B39D;
 
 }
 
-.service-title-en{
+.service-title-en {
     display: block;
     font-size: 10px;
     margin-bottom: 32px;
 }
 
-.service:nth-child(1){
-    border-right: 1px solid gray;
+.service:nth-child(1) {
+    border-right: 1px solid #e5e5e5;
 }
 
-.table{
-    display: block;
-    margin: 0 96;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 96px 0px;
+.company-map {
+    text-align: right;
 }
 
-.table-label,
-.table-value{
-   width: 35%; 
-}
-
-.table-value{
-    padding: 20px 32px;
-}
-
-.table-label{
-    padding: 20px 32px;
-}
-
-.company-map{
-  text-align: right;  
-}
-
-.contents-item:nth-child(7){
+.inquery {
     background-color: #41baa4;
     padding: 0 0 100px 0;
+    text-align: center;
 }
 
-.form{
+.form {
     color: #fff;
     text-align: center;
     margin: 40px 98.5px;
     font-size: 15px;
 }
-.btn.black a{
+
+.btn.black a {
     background-color: #3B4552;
     text-align: center;
+    /* インライン要素の真ん中寄せ　 */
     margin: 0 0 23px;
     padding: 12px 50px;
+    align-items: center;
 }
-.input type{
+
+.form-value input,
+.form-value textarea {
     padding: 8px 50px;
+    width: 50%;
+    border: 1px solid#ccc;
 }
-.table-label{
-    border-bottom: 1px solid #3B4552;
+
+
+.campany-container {
+    display: flex;
+    align-items: center;
+    /* boxの真ん中よせ flexだと名一杯boxが広がるので display:flexの時しか使えない*/
 }
-.table-label:nth-child(1){
-    border-top: 1px solid #3B4552;
+
+.table {
+    display: block;
+    margin: 0 96;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px 100px 50px 20px;
+    width: 50%;
+    border-top: 1px solid #e5e5e5;
+    box-sizing: border-box;
 }
-.table-value{
-    border-bottom: 1px solid #3B4552;
+
+.table-label {
+    width: 30%;
+    text-align: center;
+    padding: 20px 32px;
+    box-sizing: border-box;
+    /* width30%＋70%＋padding＋borderなどで100%を超えてしまうのでbox-sizing: border-box;を使うことでwidthだけになる */
+    border-bottom: 1px solid #e5e5e5;
 }
-.table-value:nth-child(1){
-    border-top: 4px solid red;
+
+.table-label:nth-child(1) {
+    border-top: 1px solid#41baa4;
+}
+
+.table-value {
+    width: 70%;
+    text-align: center;
+    padding: 20px 32px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 
 
-#footer{
+#footer {
     background-color: #031731;
     color: #fff;
     padding: 48px 0 0 0;
-    border-top: #e5e5e5;
+    border-top:8px solid #3B4552;
 }
-.footer-list-item a{
+
+.footer-list-container {
+    display: flex;
+}
+
+.footer-list-item a {
     text-decoration: none;
     color: #fff;
 }
-.footer-list{
+
+.footer-list {
     font-weight: normal;
 }
 
-.footer-list:nth-child(2){
-   text-align: right;
+.footer-list:nth-child(2) {
+    text-align: right;
 }
 
 
-.site-name{
+.site-name {
     font-size: 50px;
-    padding: 30px 0 30px 0;
+    padding: 30px 50px ;
     font-size: larger;
+    font-size: 25px;
+    border-bottom:1px solid #3B4552;
 }
 
-.company-map{
-   max-width: 0 100px ;
-   text-align: right;
+.company-map {
+    width: 50%;
+    text-align: right;
+    position: relative;
+
 }
-.copyright{
+
+.copyright {
     background-color: black;
     text-align: center;
-padding: 30px 0;
+    padding: 30px 0;
 }
-
-
