@@ -371,11 +371,11 @@ body {
 }
 
 .btn.black a {
-    background-color: #3B4552;
+    background-color: black;
     text-align: center;
     /* インライン要素の真ん中寄せ　 */
     margin: 0 0 23px;
-    padding: 12px 50px;
+    padding: 12px 85px;
     align-items: center;
 }
 
@@ -384,6 +384,7 @@ body {
     padding: 8px 50px;
     width: 50%;
     border: 1px solid#ccc;
+    border-radius: 5px;
 }
 
 
@@ -438,8 +439,10 @@ body {
 .footer-list-container {
     display: flex;
     /* flexは親要素につける */
-    padding: 50px 100px 50px 70px;
+    padding: 30px 100px 50px 70px;
+    margin: 0 80px;
 }
+
 
 .footer-list-item a {
     text-decoration: none;
@@ -452,11 +455,12 @@ body {
 }
 
 .footer-list-title{
-    padding: 20px 30px 20px 0px;
+    padding: 10px 30px 10px 0px;
 }
 
 .footer-list-item{
-    padding: 10px 30px 10px 0px;
+    padding: 5px 30px 5px 0px;
+    font-size: 15px;
 }
 
 
@@ -467,8 +471,10 @@ body {
     font-size: larger;
     font-size: 25px;
     border-bottom: 1px solid #3B4552;
-    margin: 0 20px 32px 20px;
+    margin: 0 20px 0 100px;
 }
+
+
 
 .company-map {
     width: 50%;
