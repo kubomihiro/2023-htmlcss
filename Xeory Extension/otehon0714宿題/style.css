@@ -17,6 +17,8 @@ body {
 
 .title {
     margin: 0 16px;
+    text-align: none;
+    /* 文字の下の線なくす */
 }
 
 .title a {

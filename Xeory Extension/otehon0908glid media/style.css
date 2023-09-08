@@ -1,0 +1,84 @@
+* {
+    all: unset;
+    display: revert;
+    box-sizing: border-box;
+}
+
+#header {
+    background-color: #47b39d;
+    display: grid;
+    grid-template:
+        "title . menu"auto / auto 1fr auto;
+}
+
+/* エリアを3等分してる　menuの隣は高さ　
+下のautoは文字分の距離　1frは空いてる分の距離？伸びる pxでもまる
+行と列を作る　glid */
+
+
+
+#header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.title {
+    grid-area: title;
+}
+
+.gnav {
+    grid-area: menu;
+}
+
+nav {
+    display: contents;
+    /* navのタグを無くしてる display none だとそのタグの中身全部消える*/
+}
+
+test {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: pink;
+    height: 100px;
+    }
+
+.entry {
+    display: none;
+}
+
+.feature {
+    border: 1px solid red;
+    display: grid;
+    grid-template:
+        "img title"auto "img text"auto "img btn"1fr / auto 1fr;
+    gap: 16px;
+    /* marginと違って外側の空きを気にしなくていい */
+}
+
+.feature-img {
+    width: 500px;
+    grid-area: img;
+}
+
+.feature-img img {
+    width: 100%;
+}
+
+.feature-title {
+    grid-area: title;
+}
+
+.feature-text {
+    grid-area: text;
+}
+
+.feature .btn {
+    grid-area: btn;
+}
+@media (width <= 800px) {
+    .feature {
+    display: block;
+    }
+    }
+
+    /* glidとmediaを使ってcss組んでみる!!!! */
